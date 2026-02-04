@@ -728,7 +728,7 @@
         
         // دفع PayPal
         function processPayPalPayment(amount) {
-            const paypalURL = `https://www.paypal.com/donate/?hosted_button_id=YOUR_BUTTON_ID&amount=${amount}`;
+            const paypalURL = `https://www.paypal.com/ncp/payment/HJSY7BWFAZRWJ&amount=${amount}`;
             window.open(paypalURL, '_blank');
             trackDonation(amount, 'paypal');
         }
@@ -739,9 +739,9 @@
                 🏦 **تفاصيل التحويل البنكي:**
                 =============================
                 البنك: CIH البنك
-                اسم الحساب: حملة إغاثة فيضانات القصر الكبير
-                رقم الحساب: 0123 4567 8901 2345
-                IBAN: MA64 1234 5678 9012 3456 7890 123
+                اسم الحساب: M.MOHAMED BENACHER
+                رقم الحساب RIB: 230 731 5419185211011600 94
+                IBAN: MA64 2307 3154 1918 5211 0116 0094
                 SWIFT: CIHMMAMC
                 
                 💰 **المبلغ:** ${amount} درهم مغربي
@@ -751,7 +751,7 @@
                 2. أرسله إلى: bank@ghsar-alkabir.org
                 3. سيصلك إيصال رسمي خلال 24 ساعة
                 
-                📞 للاستفسار: 212-5XX-XXX-XXX
+                📞 للاستفسار: 212704690500
                 
                 شكراً لدعمكم الكري! ❤️
             `;
@@ -833,4 +833,5 @@
         function animateCounter(elementId, targetValue) {
             const element = document.getElementById(elementId);
             let currentValue = parseInt(element.innerText.replace(/,/g, ''));
+
             const increment = Math.ceil(targetValue / 100
